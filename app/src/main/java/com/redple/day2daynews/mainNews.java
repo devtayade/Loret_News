@@ -2,7 +2,7 @@ package com.redple.day2daynews;
 
 import java.util.ArrayList;
 
-public class mainNews {
+public class  mainNews {
 
     private String status;
     private String totalResults;

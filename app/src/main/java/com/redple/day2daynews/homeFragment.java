@@ -33,9 +33,9 @@ public class homeFragment extends Fragment {
 
 //after this we have to copy and paste for category news and also copy all above 22-26 and make changes.*videp me 1hr3min par cate ki settings mil jaigi.
 
-         recyclerViewofhome= view.findViewById(R.id.home_fragment);
+         recyclerViewofhome= view.findViewById(R.id.recyclerviewofhome);
          modelClassArrayList=new ArrayList<>();
-         recyclerViewofhome.setLayoutManager(new LinearLayoutManager(getContext()));
+          recyclerViewofhome.setLayoutManager(new LinearLayoutManager(getContext()));
          adapter = new Adapter(getContext(),modelClassArrayList);
          recyclerViewofhome.setAdapter(adapter);
 

@@ -23,7 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="News"
+                android:text="@string/appName"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
                 android:layout_marginEnd="10dp"
                 android:background="@color/white"
                 android:padding="5dp"
-                android:src="@drawable/ic_search" />
+                android:src="@drawable/ic_search"    />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -44,10 +44,11 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="0dp"
         android:backgroundTint="@color/white"
         app:tabIndicatorColor="#03A9F4"
         app:tabIndicatorHeight="3.5dp"
+        app:tabMode="scrollable"
         app:tabSelectedTextColor="#03A9F4"
         app:tabTextColor="#618C8F">
 
@@ -55,19 +56,57 @@
             android:id="@+id/HomeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home"></com.google.android.material.tabs.TabItem>
+            android:text="@string/home">
+
+        </com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/catButton"
+            android:id="@+id/Science"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"></com.google.android.material.tabs.TabItem>
+            android:text="@string/science">
+
+        </com.google.android.material.tabs.TabItem>
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/favButton"
+            android:id="@+id/Buisness"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Favorite"></com.google.android.material.tabs.TabItem>
+            android:text="@string/buisness">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entertainment">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/health">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sports">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Tech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/technology">
+
+        </com.google.android.material.tabs.TabItem>
 
 
     </com.google.android.material.tabs.TabLayout>
