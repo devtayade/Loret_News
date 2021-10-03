@@ -1,4 +1,4 @@
-package com.redple.day2daynews;
+package com.redple.Loret;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

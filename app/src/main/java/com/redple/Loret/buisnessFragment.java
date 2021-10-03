@@ -1,4 +1,4 @@
-package com.redple.day2daynews;
+package com.redple.Loret;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,26 +17,26 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class technologyFragment extends Fragment {
+public class buisnessFragment extends Fragment {
 
     String api="2b11317f76864c60b5b42939e558acb2";
     ArrayList<ModelClass> modelClassArrayList;
     Adapter adapter;
     String country="in";
-    private RecyclerView recyclerViewoftechnology;
-    private String category="technology";
+    private RecyclerView recyclerViewofbuisness;
+    private String category="business";
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.technology_fragment  ,null);
+        View view= inflater.inflate(R.layout.buisness_fragment  ,null);
 
-        recyclerViewoftechnology= view.findViewById(R.id.recyclerviewoftechnology);
+        recyclerViewofbuisness= view.findViewById(R.id.recyclerviewofbuisness);
         modelClassArrayList=new ArrayList<>();
-        recyclerViewoftechnology.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewofbuisness.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new Adapter(getContext(),modelClassArrayList);
-        recyclerViewoftechnology.setAdapter(adapter);
+        recyclerViewofbuisness.setAdapter(adapter);
 
         findNews();
         return view;

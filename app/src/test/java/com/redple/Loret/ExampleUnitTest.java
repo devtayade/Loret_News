@@ -1,4 +1,4 @@
-package com.redple.day2daynews;
+package com.redple.Loret;
 
 import org.junit.Test;
 

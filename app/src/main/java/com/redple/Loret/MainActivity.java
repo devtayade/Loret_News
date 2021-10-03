@@ -1,4 +1,4 @@
-package com.redple.day2daynews;
+package com.redple.Loret;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.PagerAdapter;

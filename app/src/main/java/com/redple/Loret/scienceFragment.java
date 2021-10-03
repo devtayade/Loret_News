@@ -1,4 +1,4 @@
-package com.redple.day2daynews;
+package com.redple.Loret;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,26 +17,26 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class sportsFragment extends Fragment {
+public class scienceFragment extends Fragment {
 
     String api="2b11317f76864c60b5b42939e558acb2";
     ArrayList<ModelClass> modelClassArrayList;
     Adapter adapter;
     String country="in";
-    private RecyclerView recyclerViewofsports;
-    private String category="sports";
+    private RecyclerView recyclerViewofscience;
+    private String category="science";
 
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.sports_fragment  ,null);
+        View view= inflater.inflate(R.layout.science_fragment,null);
 
-        recyclerViewofsports= view.findViewById(R.id.recyclerviewofsports);
+        recyclerViewofscience= view.findViewById(R.id.recyclerviewofscience);
         modelClassArrayList=new ArrayList<>();
-        recyclerViewofsports.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewofscience.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new Adapter(getContext(),modelClassArrayList);
-        recyclerViewofsports.setAdapter(adapter);
+        recyclerViewofscience.setAdapter(adapter);
 
         findNews();
         return view;
@@ -58,6 +58,8 @@ public class sportsFragment extends Fragment {
             }
         });
 
+        }
     }
-}
+
+
 
